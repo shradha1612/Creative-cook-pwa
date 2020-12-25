@@ -1,0 +1,54 @@
+{
+    "name":"Creative Cooks by-shradha", 
+    "short_name":"Creative cooks",
+    "start_url": "/index.html",
+    "display":"standalone",
+    "background_color": "#FF8816",
+    "theme_color":"#FFE1C4",
+    "orientation":"portrait-primary",
+    "icons": [
+        {
+           "src":"/img/icon/icon-72X72.png",
+           "type":"image/png",
+           "sizes":"72x72"
+        },
+        {
+            "src":"/img/icon/icon-96X96.png",
+            "type":"image/png",
+            "sizes":"96x96" 
+         },
+         {
+            "src":"/img/icon/icon-128X128.png",
+            "type":"image/png",
+            "sizes":"128x128" 
+         },
+        {
+            "src":"/img/icon/icon-144X144.png",
+            "type":"image/png",
+            "sizes":"144x144" 
+         },
+         {
+            "src":"/img/icon/icon-152X152.png",
+            "type":"image/png",
+            "sizes":"152x152" 
+         },
+         {
+            "src":"/img/icon/icon-192X192.png",
+            "type":"image/png",
+            "sizes":"192x192" 
+         },
+         {
+            "src":"/img/icon/icon-384X384.png",
+            "type":"image/png",
+            "sizes":"384x384"
+         },
+         {
+            "src":"/img/icon/icon-512X512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+
+             
+         }
+    ]
+
+}

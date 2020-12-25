@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>creative coooks</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/icons/icon.96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <meta name="theme-color" content="#FFE1C4">
+</head>
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">CREATIVE<span>COOOKS</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="large material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">CREATIVE COOKS</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Contact</a>
+    </li>
+  </ul>
+
+  <!-- recipes -->
+  <div class="recipes container grey-text text-darken-1">
+
+  </div>
+
+  <div class="center">
+    <a class="btn-floating btn-large btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add recipe side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+      <h4 class="grey-text">New Recipe</h4>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="input-field">
+        <h5 class="grey-text">Recipe Title</h5>
+        <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
+        <!-- <label for="title">Recipe Title</label> -->
+      </div>
+      <div class="input-field">
+        <h5 class="grey-text">Ingredients</h5>
+        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+        <!-- <label for="ingredients">Ingredients</label> -->
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhpYaky95cd7XJ4DXxRzzRHfBRlC61nM4",
+    authDomain: "creative-cooks-ce7bb.firebaseapp.com",
+    projectId: "creative-cooks-ce7bb",
+    storageBucket: "creative-cooks-ce7bb.appspot.com",
+    messagingSenderId: "680978105388",
+    appId: "1:680978105388:web:c366b56a8528dcbc4a3d89",
+    measurementId: "G-9RB6B73N05"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db= firebase.firestore()
+  firebase.analytics();
+</script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
